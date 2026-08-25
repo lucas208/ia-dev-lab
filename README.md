@@ -12,7 +12,16 @@ Projeto desenvolvido como atividade prática sobre desenvolvimento de software a
 
 É necessário ter uma JDK instalada e configurada no ambiente.
 
-Acesse a pasta `src`:
+Acesse a pasta `src` e execute os comandos abaixo:
 
 ```bash
 cd src
+javac Hello.java
+java Hello
+```
+
+## Estrutura do projeto
+
+- `src/`: código-fonte do projeto.
+- `tests/`: testes automatizados.
+- `docs/`: documentação e decisões arquiteturais.
