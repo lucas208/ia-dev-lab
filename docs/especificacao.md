@@ -120,3 +120,19 @@ Foi utilizada a abordagem de especificação manual em Markdown, com apoio do Co
 
 A escolha pelo Markdown foi feita por ser uma abordagem simples, adequada ao tamanho do projeto e permitida pela atividade, evitando a necessidade de configurar ferramentas adicionais como OpenSpec ou SpecKit. 
 O Codex foi utilizado como agente para analisar os requisitos, propor o plano de implementação e apoiar a execução das tarefas, enquanto as decisões sobre regras e casos de borda foram revisadas manualmente.
+
+## Checkpoint Humano
+
+### Ponto de parada
+
+O agente deve interromper a execução após criar os testes automatizados e antes de executá-los, permitindo que o responsável revise se os casos de teste cobrem os requisitos e critérios de aceite definidos na especificação.
+
+### Simulação
+
+Foi realizada a revisão dos testes criados para as funcionalidades implementadas. Foram conferidos os casos normais e os casos de borda definidos na especificação, verificando se os testes representavam adequadamente os critérios de aceite.
+
+### Decisão
+
+**Aprovar como está.**
+
+Os testes foram considerados adequados para validar os comportamentos especificados, incluindo os casos de borda. O papel humano foi verificar a correspondência entre os testes e a especificação antes de permitir a execução da etapa de validação.
