@@ -1,15 +1,28 @@
 public class PalindromoEficaz {
-    public static boolean ehPalindromo(String palavra) {
-        if (palavra == null) {
+    public static boolean ehPalindromo(String texto) {
+        if (texto == null) {
             return false;
         }
 
         int inicio = 0;
-        int fim = palavra.length() - 1;
+        int fim = texto.length() - 1;
 
         while (inicio < fim) {
-            char letraInicio = Character.toLowerCase(palavra.charAt(inicio));
-            char letraFim = Character.toLowerCase(palavra.charAt(fim));
+            char caractereInicio = texto.charAt(inicio);
+            char caractereFim = texto.charAt(fim);
+
+            if (!Character.isLetter(caractereInicio)) {
+                inicio++;
+                continue;
+            }
+
+            if (!Character.isLetter(caractereFim)) {
+                fim--;
+                continue;
+            }
+
+            char letraInicio = Character.toLowerCase(caractereInicio);
+            char letraFim = Character.toLowerCase(caractereFim);
 
             if (letraInicio != letraFim) {
                 return false;
