@@ -1,15 +1,23 @@
 public class PalindromoEficaz {
-    public static boolean ehPalindromo(String palavra) {
-        if (palavra == null) {
+    public static boolean ehPalindromo(String texto) {
+        if (texto == null) {
             return false;
         }
 
         int inicio = 0;
-        int fim = palavra.length() - 1;
+        int fim = texto.length() - 1;
 
         while (inicio < fim) {
-            char letraInicio = Character.toLowerCase(palavra.charAt(inicio));
-            char letraFim = Character.toLowerCase(palavra.charAt(fim));
+            while (inicio < fim && !Character.isLetter(texto.charAt(inicio))) {
+                inicio++;
+            }
+
+            while (inicio < fim && !Character.isLetter(texto.charAt(fim))) {
+                fim--;
+            }
+
+            char letraInicio = Character.toLowerCase(texto.charAt(inicio));
+            char letraFim = Character.toLowerCase(texto.charAt(fim));
 
             if (letraInicio != letraFim) {
                 return false;
@@ -26,5 +34,6 @@ public class PalindromoEficaz {
         System.out.println("arara: " + ehPalindromo("arara"));
         System.out.println("Casa: " + ehPalindromo("Casa"));
         System.out.println("Ana: " + ehPalindromo("Ana"));
+        System.out.println("frase: " + ehPalindromo("Socorram-me, subi no onibus em Marrocos"));
     }
 }

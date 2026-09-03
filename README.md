@@ -11,7 +11,8 @@ Projeto desenvolvido como atividade prática sobre desenvolvimento de software a
 ## Funcionalidades
 
 - Exibição de uma mensagem de saudação.
-- Verificação de palavras palíndromas.
+- Verificação de palavras e frases palíndromas, ignorando maiúsculas, espaços e pontuação.
+- Análise de texto com contagem de palavras, caracteres e vogais.
 
 ## Como executar
 
@@ -31,6 +32,16 @@ Para executar o exemplo de verificação de palíndromos:
 javac PalindromoEficaz.java
 java PalindromoEficaz
 ```
+
+Para executar o exemplo de análise de texto:
+
+```bash
+javac AnaliseTexto.java
+java AnaliseTexto
+```
+
+Para usar a API em outro programa, chame `AnaliseTexto.analisar(texto)` e obtenha
+as contagens com `getPalavras()`, `getCaracteres()` e `getVogais()`.
 
 ## Estrutura do projeto
 
