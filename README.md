@@ -32,6 +32,13 @@ javac PalindromoEficaz.java
 java PalindromoEficaz
 ```
 
+Para compilar e executar os testes da analise de texto a partir da raiz do projeto:
+
+```bash
+javac src/AnalisadorTexto.java src/ResultadoAnaliseTexto.java tests/AnalisadorTextoTest.java
+java -cp "src;tests" AnalisadorTextoTest
+```
+
 ## Estrutura do projeto
 
 - `src/`: código-fonte do projeto.
